@@ -1,0 +1,157 @@
+#price{
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  background-color: $background-purple;
+
+  .titre_price{
+    font-family: $typo-bio-titre;
+    font-size: 20px;
+    color: $purple;
+  }
+
+  .semi-bold_price{
+    font-family: $typo-titre;
+    font-weight: $weight-semi-bold;
+    color: $color-titre;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+
+  .container_cards_price{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card{
+      width: calc((100% - 30%) / 3);
+      background-color: #ffffff;
+      margin: 3%  3% 0 3%;
+      padding: 3% 1.5%;
+      box-shadow: 0 2px 20px rgba(126, 118, 249, 0.1) ;
+      border-radius: 40px;
+
+      .titre_card_price{
+        font-family: $typo-bio-titre;
+        font-size: 28px;
+        color: $color-titre;
+        margin-bottom: 15%;
+      }
+      .para_price{
+        font-family: $typo-titre;
+        font-weight: $weight-light;
+        text-align: center;
+        margin-bottom: 9%;
+        color: $color-txt;
+
+      }
+      .price{
+        font-family: $typo-titre;
+        font-weight: $weight-semi-bold;
+        font-size: 30px;
+        color: $blue;
+        margin-bottom: 9%;
+
+      }
+
+      .bttn_price{
+        font-family: $typo-titre;
+        font-weight: $weight-semi-bold;
+        font-size: 16px;
+        color: #ffffff;
+        background: $gradient;
+        border-radius:60px;
+        padding: $padding-bttn;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  #price{
+
+    .titre_price{
+      font-size: 18px;
+    }
+
+    .semi-bold_price{
+      font-size: 40px;
+    }
+
+    .container_cards_price{
+
+      .card{
+
+        .titre_card_price{
+          font-size: 25px;
+        }
+
+        .price{
+
+          font-size: 20px;
+
+        }
+
+        .bttn_price{
+
+          font-size: 14px;
+
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #price{
+
+    .container_cards_price{
+
+      .card{
+
+        .titre_card_price{
+          font-size: 20px;
+        }
+        .para_price{
+
+        font-size: 14px;
+
+        }
+        .price{
+
+          font-size: 20px;
+
+        }
+
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 376px){
+  #price{
+
+    .titre_price{
+      font-size: 14px;
+    }
+
+    .semi-bold_price{
+      font-size: 30px;
+    }
+
+    .container_cards_price{
+
+      .card{
+        width: calc((100% - 30%) / 1);
+        .para_price{
+
+          font-size: 15px;
+
+        }
+      }
+    }
+  }
+}

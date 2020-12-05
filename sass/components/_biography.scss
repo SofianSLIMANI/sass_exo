@@ -1,0 +1,168 @@
+ #biography{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 70px;
+    display: flex;
+    picture{
+      width: 50%;
+      img{
+        width: $width-img;
+        height: auto;
+      }
+    }
+
+   .bio_article{
+     background-image: url("/assets/img/background-we-are.png");
+     background-size: cover;
+     width: 50%;
+     padding-top: 170px;
+     padding-left: 6%;
+     .titre_bio{
+       font-family: $typo-bio-titre;
+       font-weight: $weight-regular;
+       color: $purple;
+     }
+     .semi-bold_bio{
+       font-family: $typo-titre;
+       color: $color-titre;
+       font-weight: $weight-semi-bold;
+       font-size: 50px;
+
+     }
+     .p_bio{
+       font-family: $typo-titre;
+       font-weight: $weight-light;
+       width: 79%;
+     }
+
+     .bttn_bio{
+       font-family: $typo-titre;
+       font-weight: $weight-semi-bold;
+       font-size: 12px;
+       color: #ffffff;
+       background: $gradient;
+       text-transform: uppercase;
+       padding: $padding-bttn;
+       border-radius:60px;
+       margin-top: 40px;
+     }
+   }
+
+ }
+
+ @media only screen and (max-width: 1024px){
+   #biography{
+     margin-top: 100px;
+     picture{
+       img{
+         margin-left: 10%;
+         width: 70%;
+       }
+     }
+
+     .bio_article{
+
+       padding-top: 50px;
+       padding-left: 6%;
+       .titre_bio{
+
+       }
+       .semi-bold_bio{
+
+         font-size: 40px;
+
+       }
+       .p_bio{
+
+         font-size: 14px;
+       }
+
+     }
+
+   }
+ }
+
+ @media only screen and (max-width: 768px){
+   #biography{
+     display: block;
+
+
+
+     picture{
+       margin-left: auto;
+       margin-right: auto;
+       img{
+
+         width: 70%;
+       }
+     }
+
+     .bio_article{
+        width: 70%;
+       text-align: center;
+       padding-top: 50px;
+
+       margin-left: auto;
+       margin-right: auto;
+       .titre_bio{
+
+       }
+       .semi-bold_bio{
+
+         font-size: 40px;
+
+       }
+       .p_bio{
+          width: 100%;
+         font-size: 14px;
+       }
+
+       .bttn_bio{
+         font-size: 10px;
+         margin-top: 40px;
+       }
+     }
+
+   }
+ }
+
+ @media only screen and (max-width: 376px){
+   #biography{
+
+     picture{
+       margin-left: auto;
+       margin-right: auto;
+
+       img{
+         width: 70%;
+       }
+     }
+
+     .bio_article{
+       width: 80%;
+
+       .titre_bio{
+        font-size: 15px;
+       }
+       .semi-bold_bio{
+
+         font-size: 30px;
+
+       }
+       .p_bio{
+         width: 100%;
+         font-size: 11px;
+       }
+
+       .bttn_bio{
+         font-size: 10px;
+         margin-top: 25px;
+       }
+     }
+
+   }
+ }
+
+
+
+
